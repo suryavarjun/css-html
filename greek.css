@@ -1,0 +1,281 @@
+/* h1{
+    background-color: aquamarine;
+    color: red;
+}
+
+/* div { 
+    background: green; 
+    position: relative; 
+    animation: gif 10s ; 
+}  */
+
+/* @keyframes gif { 
+    0% { 
+        top: 0px;  
+        width: 00px; 
+    } 
+    25% { 
+        top: 50px;  
+        background: skyblue;  
+        /* width: 50px;  */
+    /* } 
+    50% { 
+        top: 100px;  
+        background: LightGreen ;  
+        /* width: 100px;  */
+    /* } 
+    75% { 
+        top: 150px;  
+        background:MediumSeaGreen;  
+        /* width: 150px;  */
+    /* } 
+    100% { 
+        top: 200px;  
+        color: white; 
+        background: Green;  
+        /* width: 200px;  */
+    /* }   */
+/* }   */
+
+/* @media screen and (min-width: 600px) { 
+    h2{
+        color: lightgray;
+    }
+}
+
+#id1{
+    width: 420px; 
+    height: 200px; 
+    border: 2px solid black; 
+    display: flex; 
+    align-items: flex-end; 
+    
+}
+
+#hel{
+    animation-name: exam;
+    animation-duration: 10s;
+    font-size: 20px;
+}
+
+#wel{
+    animation-name: exam;
+    animation-duration: 10s;
+    animation-delay: 10s;
+    font-size: 20px;
+}
+
+@keyframes exam {
+    from {
+        background-origin: orange;
+    }
+    to {
+        background-color: wheat;
+    }
+}
+#stretch { 
+    width: 320px; 
+    height: 200px; 
+    border: 2px solid black; 
+    display: flex; 
+    align-items: stretch; 
+} 
+
+.shape { 
+    position: absolute; 
+    background: #0F9D58; 
+    width: 200px; 
+    height: 200px; 
+    color: #ffffff; 
+    text-align: center; 
+} 
+  
+.shape1 { 
+    border: solid; 
+    border-color: black; 
+    position: absolute; 
+    background: #ffffff; 
+    width: 200px; 
+    height: 200px; 
+    color: #0F9D58; 
+    text-align: center; 
+} 
+  
+#clip_property { 
+    clip:initial; 
+} 
+  
+#clip_property1 { 
+    clip: inherit; 
+}   */
+
+a:before{
+    content: attr(href)   "=>";
+}
+
+
+.gradient{
+    height: 100px; 
+    background-image: linear-gradient(rgb(47, 107, 47), rgb(126, 126, 74), rgb(51, 51, 88)); 
+    Text-align:center; 
+    padding-top:40px; 
+    font-size:40px; 
+    color:white; 
+    font-weight:bold;
+}
+
+:root{
+    --main-bg-color: grey;
+}
+
+h2, h1{
+    background-color: var( --main-bg-color);
+    font-size: 30px;
+}
+
+p[class*="for"] { 
+    background: green; 
+    color: white; 
+} 
+
+h1:hover{ 
+color: white;
+background-color: red;
+}
+
+input::placeholder { 
+    background-color: #fff; 
+    margin:10px; 
+    padding: 5px; 
+    color:black;    
+} 
+
+.main, .gfg1, .gfg2, .gfg3, .gfg4, .gfg5, .gfg6, .gfg7, .gfg8 { 
+    display: grid; 
+    /* grid: auto auto / auto auto auto auto;  */
+    grid-gap: 10px; 
+    background-color: lightgreen; 
+    padding: 10px;
+    /* grid-template: 50px 100px ; */
+    grid-template-rows: 100px 70px;
+ grid-template-columns: 100px 500px 50px;
+    grid-template-areas: "a a";   
+    /* columns: 20px ; */
+
+} 
+
+ /* .gfg3{
+    grid-template-columns: 50px;
+} */
+  
+.gfg1, .gfg2, .gfg3, .gfg4, .gfg5, .gfg6, .gfg7, .gfg8 { 
+    background-color: lightgrey; 
+    text-align: center; 
+    padding: 25px 0; 
+    font-size: 30px; 
+} 
+
+.gfc1{ grid-area: header;}
+.gfc2{ grid-area: menu;}
+.gfc3{ grid-area: main;}
+.gfc4{ grid-area: right;}
+.gfc5{ grid-area: footer;}
+
+.man{
+    display: grid;
+    grid-template-areas: 
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+    grid-gap:10px;
+    padding:20px;
+    background-color: lightcoral;
+}
+
+.man > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+
+.trans{
+    height: 100px;
+    width: 150px;
+    border: 2px solid black;
+    margin: 10px auto;
+    background: skyblue;
+    text-align: center;
+    transition: height .5s , width .5s;
+    padding-top: 60px;
+}
+
+.trans:hover{
+height: 200px;
+width: 200px;
+background: lightblue;
+}
+
+table, th, td{
+        border: 2px solid lightcoral;   
+        height: 50px;
+        width: 70px;
+        color: white;
+        transition: height 2s, width 2s;
+}
+
+table, th, td:hover{
+    height: 80px;
+    width: 100px;
+    background: black;
+}
+
+#searchbar{ 
+    margin-left: 15%; 
+    padding:15px; 
+    border-radius: 10px; 
+  } 
+
+  input[type=text] { 
+     width: 30%; 
+     -webkit-transition: width 0.15s ease-in-out; 
+     transition: width 0.15s ease-in-out; 
+  } 
+
+  /* When the input field gets focus, 
+       change its width to 100% */
+  input[type=text]:focus { 
+    width: 70%; 
+  } 
+
+ #list{ 
+   font-size:  1.5em; 
+   margin-left: 90px; 
+  } 
+
+.animals{ 
+  display: list-item;     
+ } 
